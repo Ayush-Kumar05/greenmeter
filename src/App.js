@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import "./App.css";
+import Header from "./Mycomponents/Header";
+import SignInButt from "./Mycomponents/SignInButt";
 function App() {
+  
+    const divStyle = {
+      backgroundImage: "url(/img1.jpg)",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover",
+      width: "100%",
+      height: "800px", // Adjust the height as needed
+    };
+    
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Header />
+    < SignInButt/>
+    <h4>One Step Toward The Enviroment</h4>
+
+      <div style={divStyle}></div>
+         
+  
+    
+  </>
   );
 }
 
